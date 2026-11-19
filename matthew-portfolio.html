@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b12">
+<meta name="description" content="Матвей — разработчик. Проекты, технологии и контакты.">
+<title>Матвей — разработчик</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090b12;--panel:#10131e;--panel2:#141827;--text:#f4f5fb;--muted:#9299ad;--line:rgba(255,255,255,.09);--a:#9b8cff;--b:#63d9ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 5%,rgba(105,83,255,.16),transparent 34%),radial-gradient(ellipse at 12% 45%,rgba(49,184,220,.08),transparent 30%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,black,transparent 80%)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 44px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:2}.brand{font:500 15px 'DM Mono',monospace;letter-spacing:-.5px}.brand b{color:var(--a)}.navlinks{display:flex;gap:30px;color:var(--muted);font-size:13px}.navlinks a:hover{color:white}.status{font:12px 'DM Mono',monospace;color:#a8f0c3;display:flex;align-items:center;gap:9px}.dot{width:7px;height:7px;border-radius:50%;background:#65e6a0;box-shadow:0 0 13px #65e6a0}
+.hero{min-height:650px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px;padding:80px 0 95px;position:relative}.eyebrow{font:12px 'DM Mono',monospace;color:var(--b);letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--b)}h1{font-size:clamp(48px,7vw,82px);line-height:1.04;letter-spacing:-5px;margin:24px 0 22px;font-weight:800}.gradient{background:linear-gradient(105deg,#fff 10%,#b8adff 55%,#66dfff);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{color:var(--muted);font-size:16px;line-height:1.9;max-width:510px}.actions{display:flex;gap:13px;margin-top:34px;flex-wrap:wrap}.btn{padding:14px 19px;border:1px solid var(--line);border-radius:12px;font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:.25s}.btn.primary{background:linear-gradient(110deg,#8878ff,#5b9dff);border:0;color:white;box-shadow:0 10px 35px rgba(112,103,255,.2)}.btn:hover{transform:translateY(-3px);border-color:rgba(167,153,255,.55)}.btn.primary:hover{box-shadow:0 14px 38px rgba(112,103,255,.35)}.visual{height:390px;position:relative;display:grid;place-items:center}.orb{width:260px;height:260px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c5bdff 0,#8c79ff 18%,#4e4bd0 42%,#171b38 72%);filter:drop-shadow(0 0 70px rgba(120,102,255,.3));position:relative;animation:float 7s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(183,174,255,.35);border-radius:50%;inset:-38px;transform:rotate(-28deg) scaleY(.42)}.orb:after{inset:-68px;transform:rotate(48deg) scaleY(.35);border-color:rgba(95,218,255,.3)}.orbit{position:absolute;width:380px;height:380px;border:1px solid rgba(255,255,255,.07);border-radius:50%}.float-card{position:absolute;background:rgba(18,22,37,.8);border:1px solid var(--line);backdrop-filter:blur(14px);border-radius:14px;padding:14px 16px;font:11px 'DM Mono',monospace;color:#c6cbe0;box-shadow:0 18px 50px rgba(0,0,0,.25)}.float-card.one{top:34px;right:0}.float-card.two{bottom:35px;left:0}.float-card span{color:var(--b)}@keyframes float{50%{transform:translateY(-13px) rotate(5deg)}}
+.section{padding:72px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:30px}.kicker{font:11px 'DM Mono',monospace;color:var(--a);letter-spacing:2px;text-transform:uppercase}.section h2{font-size:32px;letter-spacing:-1.5px;margin:10px 0 0}.sub{color:var(--muted);font-size:13px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.about-card,.project,.tech{background:linear-gradient(145deg,rgba(20,24,39,.88),rgba(13,16,27,.9));border:1px solid var(--line);border-radius:18px;padding:25px}.about-card p{color:var(--muted);font-size:14px;line-height:1.9;margin:12px 0 0}.mini-label{font:11px 'DM Mono',monospace;color:var(--b);letter-spacing:1px}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:235px;display:flex;flex-direction:column;transition:.25s;position:relative;overflow:hidden}.project:before{content:"";position:absolute;width:150px;height:150px;right:-75px;top:-75px;border-radius:50%;background:rgba(133,115,255,.13);filter:blur(5px)}.project:hover{transform:translateY(-5px);border-color:rgba(155,140,255,.45)}.project-top{display:flex;justify-content:space-between;align-items:center}.project-icon{width:38px;height:38px;border-radius:11px;background:rgba(155,140,255,.12);display:grid;place-items:center;color:#c1b7ff;font-size:18px}.repo{font:10px 'DM Mono',monospace;color:var(--muted)}.project h3{font-size:17px;margin:22px 0 9px}.project p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}.project-foot{margin-top:auto;padding-top:22px;display:flex;justify-content:space-between;align-items:center;font:11px 'DM Mono',monospace;color:#b9b3ff}.arrow{font-size:17px}
+.tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tech{padding:19px;display:flex;align-items:center;gap:12px;font-size:13px;color:#dce0ef}.tech-icon{font-size:20px}.contact{border:1px solid rgba(155,140,255,.2);background:radial-gradient(ellipse at 90% 20%,rgba(104,91,255,.18),transparent 45%),var(--panel);border-radius:22px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact h2{font-size:34px;letter-spacing:-1.5px;margin:8px 0}.contact p{color:var(--muted);font-size:13px}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.footer{padding:30px 0 38px;display:flex;justify-content:space-between;color:#737b91;font:11px 'DM Mono',monospace}.fade{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.fade.show{opacity:1;transform:none}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:75px 0 45px;gap:15px}.visual{height:300px}.orb{width:190px;height:190px}.orbit{width:290px;height:290px}.float-card.one{right:5%}.float-card.two{left:5%}.projects{grid-template-columns:1fr 1fr}.tech-grid{grid-template-columns:1fr 1fr}.contact{align-items:flex-start;flex-direction:column}.navlinks{gap:15px}}
+@media(max-width:540px){.wrap{width:min(100% - 32px,1100px)}.nav{height:68px}.navlinks{display:none}.status{font-size:10px}h1{letter-spacing:-3px;font-size:53px}.lead{font-size:14px}.hero{min-height:auto;padding-top:65px}.visual{height:260px}.section{padding:55px 0}.section h2{font-size:27px}.about-grid,.projects{grid-template-columns:1fr}.about-card{padding:21px}.project{min-height:210px}.tech-grid{grid-template-columns:1fr 1fr;gap:9px}.tech{padding:14px;font-size:11px}.contact{padding:27px}.contact h2{font-size:29px}.footer{gap:15px;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#">matt<span style="color:#9b8cff">.</span><b>dev</b></a>
+  <nav class="navlinks"><a href="#about">Обо мне</a><a href="https://github.com/auauu2600-prog" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#stack">Стек</a><a href="#contact">Контакты</a></nav>
+  <div class="status"><i class="dot"></i> OPEN TO IDEAS</div>
+</header>
+<main>
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow">ПОРТФОЛИО / 2026</div>
+    <h1>Привет,<br>я <span class="gradient">Матвей.</span></h1>
+    <p class="lead">Разрабатываю цифровые продукты, экспериментирую с технологиями и превращаю идеи в работающие проекты. Здесь — немного обо мне и то, над чем я работаю.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/auauu2600-prog" target="_blank" rel="noreferrer">Мой GitHub <span>↗</span></a>
+      <a class="btn" href="https://t.me/matt74hew" target="_blank" rel="noreferrer">Написать мне <span>↗</span></a>
+    </div>
+  </div>
+  <div class="visual" aria-hidden="true">
+    <div class="orbit"></div><div class="orb"></div>
+    <div class="float-card one"> <span>const</span> creativity = true;</div>
+    <div class="float-card two"> <span>✦</span> building something new_</div>
+  </div>
+</section>
+<section class="section" id="about">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">01 / ABOUT</div><h2>Немного обо мне</h2></div><div class="sub">Любопытство → идеи → код</div></div>
+  <div class="about-grid">
+   <article class="about-card fade"><div class="mini-label">КТО Я</div><p>Я Матвей — начинающий разработчик, которому интересно создавать приложения и веб-проекты. Люблю разбираться, как устроены технологии, пробовать новые инструменты и доводить задумки до результата.</p></article>
+   <article class="about-card fade"><div class="mini-label">ЧТО МНЕ ИНТЕРЕСНО</div><p>Разработка приложений, интерфейсы, автоматизация и программные инструменты. Стараюсь, чтобы проекты были не только функциональными, но и приятными в использовании.</p></article>
+  </div>
+ </div>
+</section>
+<section class="section" id="stack">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">03 / TOOLKIT</div><h2>Технологии и интересы</h2></div></div>
+  <div class="tech-grid">
+   <div class="tech fade"><span class="tech-icon">📱</span> Flutter</div>
+   <div class="tech fade"><span class="tech-icon">🎯</span> Dart</div>
+   <div class="tech fade"><span class="tech-icon">🌐</span> HTML & CSS</div>
+   <div class="tech fade"><span class="tech-icon">⚙️</span> Kotlin / Android</div>
+   <div class="tech fade"><span class="tech-icon">🧩</span> UI / UX</div>
+   <div class="tech fade"><span class="tech-icon">🤖</span> Telegram-боты</div>
+   <div class="tech fade"><span class="tech-icon">🛠️</span> Git & GitHub</div>
+   <div class="tech fade"><span class="tech-icon">💡</span> Новые технологии</div>
+  </div>
+ </div>
+</section>
+<section class="section" id="contact">
+ <div class="wrap">
+  <div class="contact fade"><div><div class="kicker">04 / GET IN TOUCH</div><h2>Есть идея? Давай обсудим.</h2><p>Открыт к общению, интересным проектам и новым знакомствам.</p></div><div class="contact-links"><a class="btn primary" href="https://t.me/matt74hew" target="_blank" rel="noreferrer">Telegram ↗</a><a class="btn" href="https://github.com/auauu2600-prog" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+ </div>
+</section>
+</main>
+<footer class="wrap footer"><span>© 2026 MATTHEW / matt.dev</span><span>Сделано с интересом к деталям ✦</span></footer>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
